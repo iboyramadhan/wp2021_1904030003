@@ -1,5 +1,5 @@
 <?php
-date_default_timezone_get("Asia/Jakarta"); 
+date_default_timezone_set("Asia/Jakarta"); 
 
 include 'koneksi.php';
 ?>
@@ -16,7 +16,7 @@ include 'koneksi.php';
      <!-- font --> 
     <link rel ="stylesheet" href="tema/fontawesome/css/all.min.css">
    
-    <title>hay</title>
+    <title>CRUD</title>
   </head>
   <body>
 
