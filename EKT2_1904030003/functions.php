@@ -20,3 +20,10 @@ function query($query)
   }
   return $rows;
 }
+
+function hapus($id)
+{
+  global $conn;
+  mysqli_query($conn, "DELETE FROM calon_mhs WHERE id = $id ") or die(mysqli_error($conn));
+  return mysqli_affected_rows($conn);
+}

@@ -76,6 +76,13 @@ $camaba = query("SELECT * FROM calon_mhs");
       <!-- konten -->
       <h3><i class="fas fa-users"></i> Dosen Fakultas Teknik </h3>
       <hr>
+
+      <!-- Pencarian data -->
+      <form action="" method="POST">
+        <input type="text" id="keyword" size="50" name="keyword" placeholder="masukan keyword" autocapitalize="off">
+        <button type="submit" class="btn btn-primary" name="cari">CARI</button>
+      </form>
+
       <table class="table table-striped">
         <thead>
           <tr>
