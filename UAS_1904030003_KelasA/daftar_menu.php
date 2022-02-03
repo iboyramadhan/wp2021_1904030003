@@ -61,7 +61,7 @@
     <div class="row mt-3">
       <div class="col-md-3">
         <div class="card border-dark">
-          <img src="images/ramen.jpg" class="card-img-top" alt="...">
+          <img src="bostraap/images/ramen.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title font-weight-bold">Ramen</h5>
             <label class="card-text harga">Rp. 100.000</label><br>
@@ -73,7 +73,7 @@
 
       <div class="col-md-3">
         <div class="card border-dark">
-          <img src="images/salat.jpg" class="card-img-top" alt="...">
+          <img src="bostraap/images/salat.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title font-weight-bold">Salad</h5>
             <label class="card-text">Rp. 90.000</label><br>
@@ -85,7 +85,7 @@
 
       <div class="col-md-3">
         <div class="card border-dark">
-          <img src="images/seafd.jpg" class="card-img-top" alt="...">
+          <img src="bostraap/images/seafd.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title font-weight-bold">Seafood</h5>
             <label class="card-text">Rp. 300.000</label><br>
@@ -97,7 +97,7 @@
 
       <div class="col-md-3">
         <div class="card border-dark">
-          <img src="images/sosis.jpg" class="card-img-top" alt="...">
+          <img src="bostraap/images/sosis.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title font-weight-bold">Fish Salad</h5>
             <label class="card-text">Rp. 150.000</label><br>
@@ -111,7 +111,7 @@
     <div class="row mt-3">
       <div class="col-md-3">
         <div class="card border-dark">
-          <img src="images/susi.jpg" class="card-img-top" alt="...">
+          <img src="bostraap/images/susi.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title font-weight-bold">Shusi</h5>
             <label class="card-text">Rp. 150.000</label><br>
@@ -123,7 +123,7 @@
 
       <div class="col-md-3">
         <div class="card border-dark">
-          <img src="images/esjeruk.jpg" class="card-img-top" alt="...">
+          <img src="bostraap/images/esjeruk.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title font-weight-bold">Es Jeruk</h5>
             <label class="card-text">Rp. 15.000</label><br>
@@ -135,7 +135,7 @@
 
       <div class="col-md-3">
         <div class="card border-dark">
-          <img src="images/sanford.jpg" class="card-img-top" alt="...">
+          <img src="bostraap/images/sanford.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title font-weight-bold">Air Mineral</h5>
             <label class="card-text">Rp. 5.000</label><br>
@@ -147,7 +147,7 @@
 
       <div class="col-md-3">
         <div class="card border-dark">
-          <img src="images/c.jpg" class="card-img-top" alt="...">
+          <img src="bostraap/images/c.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title font-weight-bold">Bir Dream</h5>
             <label class="card-text">Rp. 45.000</label><br>
@@ -161,7 +161,7 @@
     <div class="row mt-3 mb-5">
       <div class="col-md-3">
         <div class="card border-dark">
-          <img src="images/d.jpg" class="card-img-top" alt="...">
+          <img src="bostraap/images/d.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title font-weight-bold">Susu Soda</h5>
             <label class="card-text">Rp. 20.000</label><br>
@@ -173,7 +173,7 @@
 
       <div class="col-md-3">
         <div class="card border-dark ">
-          <img src="images/e.jpg" class="card-img-top" alt="...">
+          <img src="bostraap/images/e.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title font-weight-bold">Coffee Capucino</h5>
             <label class="card-text">Rp. 35.000</label><br>
@@ -185,7 +185,7 @@
 
       <div class="col-md-3">
         <div class="card border-dark">
-          <img src="images/jusmangga.jpg" class="card-img-top" alt="...">
+          <img src="bostraap/images/jusmangga.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title font-weight-bold">Jus Mangga</h5>
             <label class="card-text">Rp. 15.000</label><br>
@@ -197,7 +197,7 @@
 
       <div class="col-md-3">
         <div class="card border-dark">
-          <img src="images/f.jpg" class="card-img-top" alt="...">
+          <img src="bostraap/images/f.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title font-weight-bold">Es Cream</h5>
             <label class="card-text">Rp. 17.000</label><br>
@@ -209,7 +209,7 @@
     </div>
   </div>
   <!-- Akhir Menu -->
-
+  S
   <!-- Awal Footer -->
   <hr class="footer">
   <div class="container">

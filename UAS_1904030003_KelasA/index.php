@@ -67,7 +67,7 @@
     <div class="row mb-5 mt-5 ">
       <div class="col-md-6 d-flex justify-content-end">
         <div class="card bg-dark text-white border-light">
-          <img src="images/background/menu1.jpg" class="card-img" alt="Lihat Daftar Menu">
+          <img src="bostraap/images/background/menu1.jpg" class="card-img" alt="Lihat Daftar Menu">
           <div class="card-img-overlay mt-6 text-center">
             <a href="daftar_menu.html" class="btn btn-primary">LIHAT DAFTAR MENU</a>
           </div>
@@ -76,7 +76,7 @@
 
       <div class="col-md-6 d-flex justify-content-start">
         <div class="card bg-dark text-white border-light">
-          <img src="images/background/menu2.jpg" class="card-img" alt="Lihat Pesanan">
+          <img src="bostraap/images/background/menu2.jpg" class="card-img" alt="Lihat Pesanan">
           <div class="card-img-overlay mt-6 text-center">
             <a href="pesanan.html" class="btn btn-primary">LIHAT PESANAN</a>
           </div>
