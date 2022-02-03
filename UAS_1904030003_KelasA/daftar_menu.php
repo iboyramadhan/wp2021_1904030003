@@ -21,8 +21,8 @@
     <div class="container">
       <h1 class="display-4"><span class="font-weight-bold">Ilham Rastaurant</span></h1>
       <hr>
-      <p class="lead font-weight-bold">Silahkan Pesan Menu Sesuai Keinginan Anda <br>
-        Enjoy Your Meal</p>
+      <p class="lead font-weight-bold">Jl. Maulana Yusuf 15114 Tangerang banten · 21,22 km <br>
+        Buka jam 15:00 - 21:00</p>
     </div>
   </div>
   <!-- Akhir Jumbotron -->
