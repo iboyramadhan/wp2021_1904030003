@@ -4,9 +4,11 @@ date_default_timezone_set('Asia/Jakarta');
 include 'koneksi.php';
 ?>
 
+
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,8 +19,9 @@ include 'koneksi.php';
     <link rel="stylesheet" href="tema/fontawesome/css/all.min.css">
 
     <title>CRUD</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
         <div class="container-fluid">
@@ -44,25 +47,31 @@ include 'koneksi.php';
             <!-- Menu -->
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link text-white" aria-current="page" href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a><hr class="bg-dark">
+                    <a class="nav-link text-white" aria-current="page" href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                    <hr class="bg-dark">
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#"><i class="fas fa-users"></i> Calon Mahasiswa</a><hr>
+                    <a class="nav-link text-white" href="#"><i class="fas fa-users"></i> Calon Mahasiswa</a>
+                    <hr>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#"><i class="fas fa-user-edit"></i> Input Camaba</a><hr>
+                    <a class="nav-link text-white" href="#"><i class="fas fa-user-edit"></i> Input Camaba</a>
+                    <hr>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#"><i class="fas fa-chalkboard-teacher"></i> Daftar Dosen</a><hr>
+                    <a class="nav-link text-white" href="#"><i class="fas fa-chalkboard-teacher"></i> Daftar Dosen</a>
+                    <hr>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#"><i class="far fa-calendar-alt"></i> Jadwal Kuliah</a><hr>
+                    <a class="nav-link text-white" href="#"><i class="far fa-calendar-alt"></i> Jadwal Kuliah</a>
+                    <hr>
                 </li>
             </ul>
         </div>
         <div class="col-md-10 p-5 pt-5">
             <!-- Konten -->
-            <h3><i class="fas fa-users"></i>Daftar Calon Mahasiswa</h3><hr>
+            <h3><i class="fas fa-users"></i>Daftar Calon Mahasiswa</h3>
+            <hr>
             <table class="table table-striped">
                 <thead>
                     <tr>
@@ -77,21 +86,21 @@ include 'koneksi.php';
                     </tr>
                 </thead>
                 <tbody>
-                    <?php $no=1 ?>
+                    <?php $no = 1 ?>
                     <?php
-                    while ($camaba = mysqli_fetch_assoc($rslt)){
+                    while ($camaba = mysqli_fetch_assoc($rslt)) {
                     ?>
-                    <tr>
-                        <th scope="row"><?php echo $no; ?></th>
-                        <td><?php echo $camaba['nama']; ?></td>
-                        <td><?php echo $camaba['alamat']; ?></td>
-                        <td><?php echo $camaba['jenis_kelamin']; ?></td>
-                        <td><?php echo $camaba['agama']; ?></td>
-                        <td><?php echo $camaba['sekolah_asal']; ?></td>
-                        <td><img src="image/foto1.png" width="115px"></td>
-                        <td><i class="fas fa-edit"></i> || <i class="fas fa-trash-alt"></i></td>
-                    </tr>
-                    <?php $no++ ?>
+                        <tr>
+                            <th scope="row"><?php echo $no; ?></th>
+                            <td><?php echo $camaba['nama']; ?></td>
+                            <td><?php echo $camaba['alamat']; ?></td>
+                            <td><?php echo $camaba['jenis_kelamin']; ?></td>
+                            <td><?php echo $camaba['agama']; ?></td>
+                            <td><?php echo $camaba['sekolah_asal']; ?></td>
+                            <td><img src="image/foto1.png" width="115px"></td>
+                            <td><i class="fas fa-edit"></i> || <i class="fas fa-trash-alt"></i></td>
+                        </tr>
+                        <?php $no++ ?>
                     <?php } ?>
                 </tbody>
             </table>
@@ -100,7 +109,7 @@ include 'koneksi.php';
     </div>
     <!-- Akhir Sidebar -->
 
-    
+
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -112,5 +121,6 @@ include 'koneksi.php';
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
-  </body>
+</body>
+
 </html>

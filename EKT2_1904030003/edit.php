@@ -3,6 +3,7 @@
 
 require 'functions.php';
 
+
 $id = $_GET['id'];
 $camaba = query("SELECT * FROM calon_mhs WHERE id = $id");
 // var_dump($camaba['nama']);

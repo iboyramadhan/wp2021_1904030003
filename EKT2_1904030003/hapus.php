@@ -1,6 +1,7 @@
 <?php
 require "functions.php";
 
+
 // agar tidak bisa masuk secara pengetikan manual pada URL
 if (!isset($_GET['id'])) {
   header("location: index.php");

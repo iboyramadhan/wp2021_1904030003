@@ -3,7 +3,7 @@
 $host = 'localhost';
 $user = 'root';
 $pass = '';
-$db   = 'wepsmt5.';
+$db   = 'ektwpsmt5';
 
 $konn = mysqli_connect($host, $user, $pass, $db);
 

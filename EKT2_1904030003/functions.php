@@ -1,5 +1,5 @@
 <?php
-$konn = mysqli_connect('localhost', 'root', '', 'wepsmt5.');
+$konn = mysqli_connect('localhost', 'root', '', 'ektwpsmt5');
 
 // pemanggilan tabel
 function query($query)

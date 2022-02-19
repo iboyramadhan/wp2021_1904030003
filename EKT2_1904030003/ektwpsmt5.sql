@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 19 Feb 2022 pada 08.22
+-- Waktu pembuatan: 19 Feb 2022 pada 12.24
 -- Versi server: 10.4.22-MariaDB
 -- Versi PHP: 8.1.1
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `wepsmt5.`
+-- Database: `ektwpsmt5`
 --
 
 -- --------------------------------------------------------
@@ -31,10 +31,10 @@ CREATE TABLE `calon_mhs` (
   `id` int(11) NOT NULL,
   `nama` varchar(40) NOT NULL,
   `alamat` varchar(225) NOT NULL,
-  `jenis_kelamin` varchar(9) NOT NULL,
-  `agama` varchar(9) NOT NULL,
-  `sekolah_asal` varchar(20) NOT NULL,
-  `foto_maba` varchar(12) NOT NULL
+  `jenis_kelamin` varchar(15) NOT NULL,
+  `agama` varchar(15) NOT NULL,
+  `sekolah_asal` varchar(25) NOT NULL,
+  `foto_maba` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -42,10 +42,11 @@ CREATE TABLE `calon_mhs` (
 --
 
 INSERT INTO `calon_mhs` (`id`, `nama`, `alamat`, `jenis_kelamin`, `agama`, `sekolah_asal`, `foto_maba`) VALUES
-(1, 'Mutia', 'Cikupa, tangerang', 'perempuan', 'islam', 'SMK PGRI 2', 'foto2.png'),
-(2, 'ilham', 'Cipondoh, Tangerang', 'laki-laki', 'islam', 'SMK PANCAKARYA', 'foto1.png'),
-(3, 'adam', 'PERUM 1 ', 'laki-laki', 'islam', 'SMK TELKOM', 'foto1.png'),
-(4, 'EGI MELGIANSYAH', 'BATU CEPER', 'laki-laki', 'islam', 'SMK ISLAM 3', 'foto1.png');
+(1, 'Ilham Romadona', 'Cipondoh Tangerang', 'Laki-Laki', 'Islam', 'SMK Pancakarya Tangeraang', 'foto1.png'),
+(2, 'mutia', 'Bitung jaya, tangerang', 'perempuan', 'Islam', 'SMK Yupentek 5', 'foto2.png'),
+(3, 'Raden Mas', 'Palembang', 'Laki-Laki', 'Kristen', 'SMK 5 Palembang', 'foto1.png'),
+(4, 'Didik mahendra', 'bandung, Jawa BAarat', 'Laki-Laki', 'Islam', 'SMAN 5 Ciamis', 'foto1.png'),
+(5, 'Putri rahayu', 'Batu ceper', 'perempuan', 'Islam', 'SMK 7 Tangerang', 'foto2.png');
 
 -- --------------------------------------------------------
 
@@ -54,16 +55,16 @@ INSERT INTO `calon_mhs` (`id`, `nama`, `alamat`, `jenis_kelamin`, `agama`, `seko
 --
 
 CREATE TABLE `daftar_dosen` (
-  `foto_dosen` varchar(12) NOT NULL,
+  `foto_dosen` varchar(10) NOT NULL,
   `nama` varchar(40) NOT NULL,
   `nidn` int(11) NOT NULL,
-  `jenis_kelamin` varchar(9) NOT NULL,
+  `jenis_kelamin` varchar(15) NOT NULL,
   `email` varchar(20) NOT NULL,
-  `alamat_rumah` varchar(20) NOT NULL,
-  `agama` varchar(12) NOT NULL,
-  `pendidikans1` varchar(30) NOT NULL,
-  `pendidikans2` varchar(30) NOT NULL,
-  `pendidikans3` varchar(30) NOT NULL
+  `alamat_rumah` varchar(225) NOT NULL,
+  `agama` varchar(10) NOT NULL,
+  `pendidikans1` varchar(35) NOT NULL,
+  `pendidikans2` varchar(35) NOT NULL,
+  `pendidikans3` varchar(35) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -71,8 +72,8 @@ CREATE TABLE `daftar_dosen` (
 --
 
 INSERT INTO `daftar_dosen` (`foto_dosen`, `nama`, `nidn`, `jenis_kelamin`, `email`, `alamat_rumah`, `agama`, `pendidikans1`, `pendidikans2`, `pendidikans3`) VALUES
-('foto3.png', 'Djamaludin', 401099003, 'laki-laki', 'Djamaludin@unis.ac.i', 'Sepatan Tangerang', 'islam', 'Universitas Budi Luhur', 'Universitas Harapan ', 'Universitas Raharja'),
-('foto4.png', 'Risma ', 401099004, 'perempuan', 'risma@unis.ac.id', 'Bitung Tangerang', 'islam', 'Universitas Trisakti', 'Universitas BSI', 'Universitas indonesia');
+('foto3.png', 'Djamaludin', 40109903, 'Laki-Laki', 'Djamaludin@unis.ac.i', 'Sepatan, tangerang', 'Islam', 'Universitas Budi luhur', 'Universitas Airlangga', 'Universitas Indonesia'),
+('foto4.png', 'Risnar Dewi', 40109904, 'perempuan', 'Risnar@unis.ac.id', 'Bitung jaya, Tangerang', 'Islam', 'Universitas BSI', 'Universitas Negeri Jakarta', 'Universitas Negeri Malang');
 
 --
 -- Indexes for dumped tables
@@ -85,12 +86,6 @@ ALTER TABLE `calon_mhs`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `daftar_dosen`
---
-ALTER TABLE `daftar_dosen`
-  ADD PRIMARY KEY (`nidn`);
-
---
 -- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
@@ -98,13 +93,7 @@ ALTER TABLE `daftar_dosen`
 -- AUTO_INCREMENT untuk tabel `calon_mhs`
 --
 ALTER TABLE `calon_mhs`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-
---
--- AUTO_INCREMENT untuk tabel `daftar_dosen`
---
-ALTER TABLE `daftar_dosen`
-  MODIFY `nidn` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=401099005;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
